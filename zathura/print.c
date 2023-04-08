@@ -185,7 +185,7 @@ print(zathura_t* zathura)
   /* print */
   GError* error = NULL;
   GtkPrintOperationResult result = gtk_print_operation_run(print_operation,
-                                   GTK_PRINT_OPERATION_ACTION_PRINT_DIALOG,
+                                   GTK_PRINT_OPERATION_ACTION_PRINT,
                                    GTK_WINDOW(zathura->ui.session->gtk.window), &error);
 
   if (result == GTK_PRINT_OPERATION_RESULT_ERROR) {
